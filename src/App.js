@@ -20,7 +20,7 @@ class App extends React.Component {
     }
     handleSubmit = (e) => {
         e.preventDefault();
-        fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&units=metric&appid=437373aed2dace2032291928257abf5e`)
+        fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&units=metric&appid=437373aed2dace2032291928257abf5e`)
             .then(response => {
                 if (response.ok) {
                     return response.json();
@@ -37,7 +37,7 @@ class App extends React.Component {
                 error: error.message
             }))
 
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&units=metric&appid=437373aed2dace2032291928257abf5e`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&units=metric&appid=437373aed2dace2032291928257abf5e`)
             .then(response => {
                 if (response.ok) {
                     return response.json();
