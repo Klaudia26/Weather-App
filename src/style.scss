@@ -1,0 +1,74 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    // background-image: url(./sunrise.jpg);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: top;
+    // width: 1200px;
+    margin: auto;
+    color: #fff;
+    padding-bottom: 20px;
+    &::before {
+        background-image: url(./sunrise.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        // width: 100%;
+        // height: 100%;
+        z-index: -2;
+        filter: blur(3px);
+
+        
+        }
+    .form-city{
+        text-align: center;
+        padding: 5px;
+        font-size: 40px;
+    }
+    .input-city{
+        font-family: 'Nunito', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        margin-left: 15px;
+        background-color: rgba(208, 85, 129, .4);
+        color: white;
+        border: 1px solid #D05581;
+        outline: none;
+    }
+    .app {
+        display: flex;
+        justify-content: center;
+        
+        .card {
+            margin-right: 30px; 
+            padding: 15px 20px;
+            background: linear-gradient(to top,#B585D3 , #D05581);
+            width: 400px;
+            height: 600px;
+        }
+        .header{
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            font-size: 13px;
+
+            &::after{
+                content: "";
+                position: absolute;
+                top: 50%;
+                height: 1px;
+                background: #bbb;
+                width: 100%;
+                margin-left: 25px;
+            }
+        }
+    }
+}

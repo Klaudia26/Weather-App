@@ -1,0 +1,54 @@
+.currentWeather {
+    &__country {
+        font-size: 20px;
+        margin: 10px 0 30px 0;
+        text-align: center;
+        &--city{
+            font-size: 45px;
+        }
+    }
+
+    &__current {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        padding-bottom: 100px;
+
+        &-state {
+            display: flex;
+            align-items: center;
+
+            .desc {
+                font-size: 50px;
+            }
+        }
+        
+        &-temp {
+            font-size: 140px;
+            line-height: 100px;
+            margin-top: 20px; 
+
+            &::after {
+                content: '\02DA';   
+            }
+        }
+        &-max{
+            font-size: 30px;
+            &::after {
+                content: '\2103';   
+            }
+        }
+        &-min{
+            font-size: 30px;
+            &::after {
+                content: '\2103';   
+            }
+        }
+        &--line{
+            height: 1px;
+            width: 100%;
+            background: #bbb;
+            margin: 5px 0;
+        }
+    }
+}
