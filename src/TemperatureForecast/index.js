@@ -47,7 +47,6 @@ const TemperatureForcast = ({ data }) => {
                     drawBorder: false,
                 },
                 ticks: {
-                    // display: false,
                     fontColor: '#fff',
                     callback: value => value + '°',
                 }

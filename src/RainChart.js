@@ -47,7 +47,6 @@ const RainChart = ({ data }) => {
                     drawBorder: false,
                 },
                 ticks: {
-                    // display: false,
                     fontColor: '#fff',
                 }
             }],
